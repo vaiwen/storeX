@@ -65,17 +65,47 @@ h1 {
 .navbar {
   width: 20%;
   height: 90vh;
-  background-color: #eee;
   border-right: 1px solid black;
   border-width: thick;
   display: inline-block;
   position: fixed;
 }
 
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.sizes {
+  width: 100%;
+  height: 15rem;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sizes div {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #eee;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sizes div:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
 .product-list {
   width: 80%;
-  height: 90vh;
-  background-color: #eee;
+  height: auto;
   float: right;
   display: flex;
   flex-direction: column;
@@ -84,7 +114,7 @@ h1 {
 
 .info {
   width: 100%;
-  min-height: 50px;
+  min-height: 100px;
   font-size: 2rem;
   padding: 0 3rem;
   display: flex;
@@ -101,8 +131,73 @@ h1 {
 
 .product {
   width: 23%;
-  height: 50rem;
+  height: 55rem;
   border: 1px solid black;
   margin-bottom: 1.5rem;
- /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product:hover .add {
+  background-color: #ffd000;
+  color: black;
+  cursor: pointer;
+}
+
+.product-image {
+  width: 100%;
+  height: 35rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.shipping {
+  padding: 0.6rem 1.2rem;
+  background-color: black;
+  color: white;
+  float: right;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.shipping::selection {
+  background-color: #ffd000;
+  color: black;
+}
+
+.product-title {
+  min-height: 5rem;
+  font-size: 2rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.price-info {
+  text-align: center;
+  font-size: 3rem;
+}
+
+small, span {
+  font-size: 60%;
+}
+
+.installment {
+  font-size: 60%;
+  color: #cce3de;
+}
+
+.add {
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  transition: all 0.2s;
 }

@@ -3,7 +3,15 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <h1>Hello World</h1>
+      <h3>Sizes:</h3>
+      <div className='sizes'>
+        <div>XS</div>
+        <div>S</div>
+        <div>M</div>
+        <div>ML</div>
+        <div>L</div>
+        <div>XL</div>
+      </div>
     </div>
   )
 }
