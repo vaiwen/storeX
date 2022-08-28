@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import Product from './Product'
 
 const ProductList = () => {
-    const products = useSelector(state => state.products.products) // second products coming from data.json!
+    const products = useSelector(state => state.products)
+    const [count, setCount] = useState(products.length)
+
+    useEffect(() => {
+        setCount(products.length)
+    },[products])
+ 
     return (
         <div className='product-list'>
             <section className='info'>
-                <p>25 items found</p>
+                <p> {count} items found</p>
             </section>
             <div className='products'>
                 {products.map((product, index) => (

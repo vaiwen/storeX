@@ -13,7 +13,6 @@ header {
   height: 10vh;
   background-color: #fff;
   border-bottom: 1px solid black;
-  border-width: thick;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,8 +64,7 @@ h1 {
 .navbar {
   width: 20%;
   height: 90vh;
-  border-right: 1px solid black;
-  border-width: thick;
+  max-width: 252px;
   display: inline-block;
   position: fixed;
 }
@@ -103,6 +101,13 @@ h3 {
   cursor: pointer;
 }
 
+.footer {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 2rem;
+  margin-left: 2.8rem;
+}
+
 .product-list {
   width: 80%;
   height: auto;
@@ -132,8 +137,7 @@ h3 {
 .product {
   width: 23%;
   height: 55rem;
-  border: 1px solid black;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
